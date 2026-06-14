@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --teal: #0D6B6B;
+  --teal-light: #E8F5F5;
+  --sand: #F5A623;
+  --navy: #1A1A2E;
+  --offwhite: #FAFAFA;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--offwhite);
+  color: var(--navy);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+::selection {
+  background-color: var(--teal);
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0D6B6B 0%, #0A5050 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-sand {
+  background: linear-gradient(135deg, #F5A623 0%, #E8950F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.comparison-highlight {
+  background: linear-gradient(135deg, #E8F5F5 0%, #D4EEEE 100%);
+  border-left: 3px solid #0D6B6B;
+}
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
